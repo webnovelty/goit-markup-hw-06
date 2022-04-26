@@ -30,6 +30,7 @@ h2,
 h3,
 p {
   margin: 0;
+  padding: 0;
 }
 section {
   display: block;
@@ -611,8 +612,8 @@ body {
 }
 .modal {
   position: absolute;
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
   top: 50%;
   left: 50%;
   background: #ffffff;
@@ -633,5 +634,194 @@ body {
   border-radius: 50%;
   width: 30px;
   height: 30px;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.exit-button:focus,
+.exit-button:hover {
+  fill: var(--lg-color);
+}
+.follow {
+  padding-left: 93px;
+}
+.follow-btn {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  padding: 10px 32px 10px 32px;
+  background-color: var(--lg-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.follow-label {
+  margin-bottom: 20px;
+}
+.follow-form {
+  display: flex;
+}
+.follow-form input {
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff;
+}
+.follow-form input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.follow-icon {
+  margin-left: 10px;
+}
+.modal-form {
+  padding: 40px;
+}
+.modal-h {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.modal-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.modal-label input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-label textarea {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-label input:focus,
+.modal-label textarea:focus,
+.modal-label input:active,
+.modal-label textarea:active {
+  outline: none;
+  border: 1px solid #2196f3;
+}
+.modal-label-content {
+  display: block;
+  margin-bottom: 4px;
+}
+.model-string {
+  position: relative;
+  margin-bottom: 10px;
+}
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.model-string:focus-within > .modal-icon {
+  fill: var(--lg-color);
+}
+textarea {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+}
+.modal-form textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.policy-label {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.policy-link {
+  text-decoration-line: underline;
+  color: var(--lg-color);
+}
+.policy-icon {
+  display: flex;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  border: 2px solid #212121;
+  border-radius: 10%;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox:checked + .policy-icon {
+  background-color: var(--lg-color);
+  border: 2px solid var(--lg-color);
+}
+.modal-form input,
+.modal-form textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.policy-content {
+  font-size: 14px;
+  line-height: 1.71;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 0.03em;
+  color: var(--content-color);
+}
+.checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.modal-button {
+  display: block;
+  margin: auto;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  background-color: var(--lg-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
