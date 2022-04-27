@@ -387,6 +387,9 @@ body {
   display: flex;
   align-items: baseline;
 }
+.footer-sec {
+  flex-grow: 1;
+}
 .footer-sec-soc {
   margin-left: 70px;
 }
@@ -642,7 +645,7 @@ body {
   fill: var(--lg-color);
 }
 .follow {
-  padding-left: 93px;
+  margin-left: 93px;
 }
 .follow-btn {
   display: flex;
@@ -702,10 +705,15 @@ body {
   color: #212121;
 }
 .modal-label {
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
+  margin-bottom: 10px;
+}
+.mdl {
+  margin-bottom: 0;
 }
 .modal-label input {
   width: 100%;
@@ -729,7 +737,6 @@ body {
 }
 .model-string {
   position: relative;
-  margin-bottom: 10px;
 }
 .modal-icon {
   position: absolute;
@@ -759,6 +766,7 @@ textarea {
 .policy-label {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   margin-top: 20px;
 }

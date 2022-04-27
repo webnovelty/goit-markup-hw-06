@@ -348,7 +348,7 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container footer-flex">
-       <section class="footer-sec">
+       <div class="footer-sec">
          <h2 class="visually-hidden">Футер</h2>
       <a href="./index.html"
         ><spin class="logo-part1">Web</spin><spin class="footer-logo">Studio</spin></a
@@ -364,8 +364,8 @@
           <li class="add-item"><a href="tel:+380991111111" class="footer-menu-more">+38 099 111 11 11</a></li>
         </ul>
       </address>
-    </section>
-      <section class="footer-sec-soc">
+    </div>
+      <div class="footer-sec-soc">
       <div><h2 class="third-h foot">ПРИСОЕДИНЯЙТЕСЬ</h2>
       <ul class="footer-icontt">
         <li class="icon-footer">
@@ -398,20 +398,18 @@
   </li>
 
      </ul></div>
-      </section>
-      <section class="follow">
+      </div>
+      <div class="follow">
         <h2 class="third-h foot">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <form class="follow-form">
-        <!-- <label class="follow-label"><h2 class="third-h foot">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2> -->
         <input type="text" name="email" placeholder="E-mail">
-      <!-- </label> -->
       <button type="submit" class="follow-btn">Подписаться
         <svg class="follow-icon" height="24px" width="24px">
           <use href="./img/icons/symbol-defs.svg#icon-send"></use>
         </svg>
       </button>
       </form>
-      </section>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -424,38 +422,38 @@
           <h2 class="modal-h">Оставьте свои данные, мы вам перезвоним</h2>
           <label class="modal-label">
             <span class="modal-label-content">Имя</span> 
-            <div class="model-string">
+            <span class="model-string">
             <input type="text" name="username" placeholder=" ">
             <span class="modal-icon">
               <svg height="18px" width="18px">
                 <use href="./img/icons/symbol-defs.svg#icon-person-black"></use>
               </svg>
             </span>
-          </div>
+          </span>
           </label>
           <label class="modal-label">
             <span class="modal-label-content">Телефон</span> 
-            <div class="model-string">
+            <span class="model-string">
             <input type="text" name="tel" placeholder=" ">
             <span class="modal-icon">
               <svg height="18px" width="18px">
                 <use href="./img/icons/symbol-defs.svg#icon-phone-black"></use>
               </svg>
             </span>
-          </div>
+          </span>
           </label>
           <label class="modal-label">
             <span class="modal-label-content">Почта</span> 
-            <div class="model-string">
+            <span class="model-string">
             <input type="text" name="email" placeholder=" ">
             <span class="modal-icon">
               <svg height="18px" width="18px">
                 <use href="./img/icons/symbol-defs.svg#icon-email-black"></use>
               </svg>
             </span>
-          </div>
+          </span>
           </label>
-          <label class="modal-label">
+          <label class="modal-label mdl">
             <span class="modal-label-content">Комментарий</span> 
             <textarea type="text-area" name="comment" placeholder="Введите текст"></textarea>
           </label>
